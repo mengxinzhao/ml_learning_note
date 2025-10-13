@@ -28,13 +28,11 @@ random ML reading notes
 
 $Q = XW_Q, \quad K = XW_K, \quad V = XW_V$
 
-其中，$W_Q, W_K, W_V$ 是可学习的权重矩阵，形状为$d \times d_k$（或 $d \times d_v$），$Q, K, V$ 的形状为 $n \times d_k$或$n \times d_v$。
+其中，$W_Q$, $W_K$, $W_V$ 是可学习的权重矩阵，形状为$d \times d_k$（或 $d \times d_v$），$Q, K, V$ 的形状为 $n \times d_k$或$n \times d_v$。
 
 #### （3）**计算注意力权重**
 注意力权重是通过查询和键的点积计算的，衡量每个输入元素与其他元素的相关性：
-$
-    \text{Attention Scores} = {(QK^T)}/{\sqrt{d_k}}
-$
+$\text{Attention Scores} = \frac{QK^T}{\sqrt{d_k}}$
 - $QK^T$  是形状为 $n \times n$ 的矩阵，表示每个元素对其他元素的“相似度”。
 - 除以 $\sqrt{d_k}$ 是缩放点积注意力（Scaled Dot-Product Attention）的关键步骤，用于避免点积值过大导致梯度消失。
 
