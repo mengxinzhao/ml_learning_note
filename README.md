@@ -47,3 +47,11 @@ $\text{Output} = \text{Attention Weights} \cdot V$
 ==> $\text{Attention}(Q, K, V) = \text{softmax}\left( \frac{Q K^T}{\sqrt{d_k}} \right) V$
 
 ![diag](./image/self-attention.png)
+
+4. Transformer 资料
+- https://courses.grainger.illinois.edu/ece537/fa2022/slides/lec23.pdf 课件
+- https://sebastianraschka.com/blog/2023/self-attention-from-scratch.html
+- https://jalammar.github.io/illustrated-transformer/
+- https://zhuanlan.zhihu.com/p/338817680 （只有过程 没有说明为什么）
+- https://hackmd.io/@abliu/BkXmzDBmr （台大的Li教授视频讲的有点散）
+- http://nlp.seas.harvard.edu/annotated-transformer/
