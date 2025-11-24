@@ -269,7 +269,7 @@ This is exactly how multivariate Gaussians work
 | **联合分布**   | $ \begin{bmatrix} \mathbf{y} \\ f_* \end{bmatrix} \sim \mathcal{N}\left(0, \begin{bmatrix} K + \sigma_n^2 I & K_{X*} \\ K_{*X} & K_{**} \end{bmatrix}\right) $ |
 | **后验均值**   | $ \bar{f}_* = K_{*X} (K_{XX} + \sigma_n^2 I)^{-1} \mathbf{y} $   |
 | **后验协方差** | $ \Sigma_* = K_{**} - K_{*X} (K_{XX} + \sigma_n^2 I)^{-1} K_{X*} $ |
-| **带噪声的训练点协方差矩阵** | $ K_y = K_{XX} + \sigma_n^2 I$ ｜
+| **带噪声的训练点协方差矩阵** | $ K_y = K_{XX} + \sigma_n^2 I$|, $ \sigma_n^2 $：观测噪声方差
 | **对数边缘似然** | $ \log p(\mathbf{y} \mid \theta) = -\frac{1}{2} \left[ \mathbf{y}^T K_y^{-1} \mathbf{y} + \log \lvert K_y \rvert + n \log 2\pi \right] $|
 
  
