@@ -276,3 +276,5 @@ This is exactly how multivariate Gaussians work
 </details>
 
 6. [runtime inference math](./runtime_inference_math)
+7. [runtime inference algorithm](./runtime_inference_alg/)
+8. [general_math](./math/)
