@@ -1,0 +1,5 @@
+SVD notes mostly from [youtube](https://www.youtube.com/playlist?list=PLMrJAkhIeNNSVjnsviglFoY2nXildDCcv) by Steve Brunton
+- Projection matrix
+- 4 subspaces in the eye of SVD
+- Eiganfaces and PCA
+- Randomized SVD and image compression
